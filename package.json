@@ -1,12 +1,17 @@
 {
   "name": "nodejs-demo",
   "version": "1.0.0",
-  "description": "geekbang",
+  "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "rm:dist": "rimraf dist/**",
+    "build:commonjs": "npm run rm:dist && npx webpack --config webpack.conf.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "rimraf": "3.0.0",
+    "webpack": "4.41.5",
+    "webpack-cli": "3.3.10"
+  },
   "devDependencies": {
     "nodemon": "1.18.4"
   },
