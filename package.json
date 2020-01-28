@@ -5,7 +5,11 @@
   "main": "src/index.js",
   "scripts": {
     "rm:dist": "rimraf dist/**",
+    "chapter2:sizzer": "nodemon src/chapter2/sizzerGame/index.js",
     "build:commonjs": "npm run rm:dist && npx webpack --config webpack.conf.js"
+  },
+  "dependencies": {
+    "glob": "7.1.6",
   },
   "dependencies": {
     "rimraf": "3.0.0",
