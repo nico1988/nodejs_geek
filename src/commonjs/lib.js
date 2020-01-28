@@ -7,4 +7,4 @@ exports.add = function(a, b) {
 exports.geekbang = { hello: "world" };
 setTimeout(() => {
   console.log(exports);
-});
+}, 1000);

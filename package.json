@@ -1,12 +1,19 @@
 {
   "name": "nodejs-demo",
   "version": "1.0.0",
-  "description": "geekbang",
+  "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "rm:dist": "rimraf dist/**",
+    "chapter2:sizzer": "nodemon src/chapter2/sizzerGame/index.js",
+    "build:commonjs": "npm run rm:dist && npx webpack --config webpack.conf.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "glob": "7.1.6",
+    "rimraf": "3.0.0",
+    "webpack": "4.41.5",
+    "webpack-cli": "3.3.10"
+  },
   "devDependencies": {
     "nodemon": "1.18.4"
   },
